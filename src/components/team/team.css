@@ -1,0 +1,22 @@
+.team {
+    width: 100%;
+    
+    padding: 50px 0px 150px 0px;
+    
+    background: rgb(255, 255, 255);
+    background: linear-gradient(225deg, rgb(255, 255, 255) 0%, rgb(243, 243, 243) 100%);
+}
+
+.team-wrapper {
+    margin: 0% 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team h1 {
+    text-align: center;
+    margin-bottom: 100px;
+}

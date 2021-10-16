@@ -1,0 +1,19 @@
+.roadmap {
+    width: 100%;
+    
+    padding: 100px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.roadmap h1 {
+    margin-bottom: 100px;
+}
+
+.roadmap img {
+    width: 80%;
+    margin: 10px 0px;
+}

@@ -1,0 +1,36 @@
+.team-item {
+    width: 250px;
+    height: 370px;
+
+    background-color: #222;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+    margin: 0px 20px;
+}
+
+.team-item img {
+    width: 250px;
+    height: 250px;
+
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    border-bottom: 10px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+}
+
+.team-item p {
+    margin-top: 0px;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;
+}
