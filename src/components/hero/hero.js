@@ -9,7 +9,7 @@ function Hero() {
             <button>MINT NOW</button>
         </div>
         <div className="hero-img-wrapper">
-          <img src="/hero.jpeg" alt=""></img>
+          <img src="/animation.gif" alt=""></img>
         </div>
       </div>
     );

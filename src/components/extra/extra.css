@@ -75,3 +75,22 @@
     border-width: 5px;
     border-image-source: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
 }
+
+@media only screen and (max-width: 768px) {
+    .extra {
+        width: 100%;
+        height: 1000px;
+    
+        flex-direction: column;
+    }
+    
+    .extra-item {
+        width: 100%;
+        height: 50%;
+    }
+
+    .extra-item-content {
+        width: 90%;
+        padding-right: 10%;
+    }
+}
