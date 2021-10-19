@@ -4,8 +4,8 @@ function TeamItem(props) {
     return (
       <div className="team-item bg-light">
           <img src={props.img} alt=""></img>
-          <h4>{props.title}</h4>
-          <p>{props.text}</p>
+          <h4>{props.text}</h4>
+          <p>{props.title}</p>
       </div>
     );
   }

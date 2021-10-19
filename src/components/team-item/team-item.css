@@ -22,10 +22,17 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
-    border-bottom: 10px solid;
-    border-image-slice: 1;
     border-width: 3px;
-    border-image-source: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    border-style: solid;
+    -moz-border-image: -moz-linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    -webkit-border-image: -webkit-linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    border-image: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    -webkit-border-image-slice: 1;
+    border-image-slice: 1;
+
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
 }
 
 .team-item p {
@@ -33,7 +40,14 @@
     color: white;
     text-align: center;
     padding: 0px 10px;
+    font-size: 20px;
 }
+
+.team-item h4 {
+    font-size: 36px;
+    margin: 10px;
+}
+
 
 @media only screen and (max-width: 768px) {
     .team-item {

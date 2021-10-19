@@ -9,12 +9,20 @@
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 80px;
     color: #ff4438;
 }
 
 p {
     color: #535353;
+}
+
+#big {
+    font-size: 40px;
+}
+
+#huge {
+    font-size: 80px;
 }
 
 @media only screen and (max-width: 768px) {

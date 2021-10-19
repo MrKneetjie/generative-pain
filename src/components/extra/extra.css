@@ -70,10 +70,13 @@
 
     background: none;
 
-    border: 10px solid;
-    border-image-slice: 1;
     border-width: 5px;
-    border-image-source: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    border-style: solid;
+    -moz-border-image: -moz-linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    -webkit-border-image: -webkit-linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    border-image: linear-gradient(135deg, rgb(230, 105, 105) 0%, #ff4438 100%);
+    -webkit-border-image-slice: 1;
+    border-image-slice: 1;
 }
 
 @media only screen and (max-width: 768px) {
