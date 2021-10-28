@@ -13,9 +13,8 @@ function Hero() {
   const price = 0.035;
 
   const provider = useProvider();
-  const { account, active, library, chainId, connect } = useMetamask([
-    requiredChainID,
-  ]);
+  const { account, active, library, chainId, connect, deactivate } =
+    useMetamask([requiredChainID]);
   const contract = useContract({
     address: "0x0AC80C67574bA4d0b72E0aCc94c39f8DBAF3a02d",
     abi: abi,
@@ -27,6 +26,8 @@ function Hero() {
   const onConnectClick = async () => {
     if (!active) {
       await connect();
+    } else {
+      deactivate();
     }
   };
 
@@ -50,6 +51,21 @@ function Hero() {
     counter.set(newCount);
   };
 
+  const renderConnectContent = () => {
+    if (active) {
+      return (
+        <div>
+          DISCONNECT{" "}
+          <span style={{ fontSize: "12px" }}>
+            [{account.substring(0, 4)}...{account.slice(-4)}]
+          </span>
+        </div>
+      );
+    } else {
+      return "CONNECT";
+    }
+  };
+
   return (
     <div id="home" className="hero-wrapper">
       <Toaster />
@@ -65,7 +81,7 @@ function Hero() {
         </h4>
         <div className="flex-col">
           <button className="big-button" onClick={onConnectClick}>
-            CONNECT
+            {renderConnectContent()}
           </button>
           <div className="flex-row">
             <button className="count-button" onClick={counter.decrement}>
