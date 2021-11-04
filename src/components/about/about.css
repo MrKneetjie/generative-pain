@@ -32,6 +32,14 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
     .about {
         padding: 10%;
         text-align: center;
